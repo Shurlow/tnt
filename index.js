@@ -16,12 +16,26 @@
 // });
 // console = chrome.extension.getBackgroundPage().console;
 // console.assert('WAAA')
-console.log('Hello', chrome);
-chrome.browserAction.onClicked.addListener(function(tab) {
-  chrome.tabs.executeScript({ file: "jquery-3.1.1.min.js" }, function() {
-      chrome.tabs.executeScript({ file: "content.js" });
-  });
-});
+document.querySelector('#bomb').addEventListener('click', function() {
+  console.log('BOOM!');
+  
+  
+})
+
+window.onload = function () {
+  console.log(document.querySelector('#bomb'))
+}
+
+
+// chrome.extension.getBackgroundPage().console.log('WHATS THIS!!');
+
+
+
+// chrome.browserAction.onClicked.addListener(function(tab) {
+//   chrome.tabs.executeScript({ file: "jquery-3.1.1.min.js" }, function() {
+//       chrome.tabs.executeScript({ file: "content.js" });
+//   });
+// });
 
 
 
