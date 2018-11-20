@@ -15,16 +15,9 @@
 //
 // });
 // console = chrome.extension.getBackgroundPage().console;
-// console.assert('WAAA')
-document.querySelector('#bomb').addEventListener('click', function() {
-  console.log('BOOM!');
-  
-  
-})
 
-window.onload = function () {
-  console.log(document.querySelector('#bomb'))
-}
+console.log(document, document.querySelector('.paywall-inline-tout'))
+
 
 
 // chrome.extension.getBackgroundPage().console.log('WHATS THIS!!');
